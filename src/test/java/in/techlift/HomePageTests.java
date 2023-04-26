@@ -29,8 +29,7 @@ public class HomePageTests {
         options.addArguments("--remote-allow-origins=*");
         options.addArguments("--ignore-certificate-errors");
         chromeDriver = new ChromeDriver(options);
-        chromeDriver.manage().window().maximize();
-        loginPage = new LoginPage(chromeDriver);
+
         homePage = new HomePage(chromeDriver);
     }
 
