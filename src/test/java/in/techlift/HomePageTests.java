@@ -18,9 +18,10 @@ public class HomePageTests {
 
 
 
-    LoginPage loginPage;
+     LoginPage loginPage;
     HomePage homePage;
     WebDriver chromeDriver;
+
 
     @BeforeTest
     void setup()
@@ -30,7 +31,8 @@ public class HomePageTests {
         options.addArguments("--ignore-certificate-errors");
         chromeDriver = new ChromeDriver(options);
 
-        homePage = new HomePage(chromeDriver);
+        homePage = new HomePage(chromeDriver);// object 1
+        homePage = new HomePage(chromeDriver);// object 2
     }
 
     @Test
